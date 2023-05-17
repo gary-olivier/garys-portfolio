@@ -1,60 +1,78 @@
 <DOCTYPE html>
     <!DOCTYPE html>
     <html lang="en">
-    <head>
+    <head>        
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>garysPortfolio</title>
+        <link rel="stylesheet" href="styleSheet.css">
     </head>
     <body>
-        <table  width="100%">
-            <tr>
-                <th colspan="2">
-                    <hr width="800"><h1><center> WELCOME TO MY PORTFOLIO </center></h1><hr width="1200">
-                </th>
-            </tr>
-            <tr>
-                <td>
-                <header>
+        <div class="mainBox">      
+            <span id="pageHeading"><hr width="800"><h1><center> WELCOME TO MY PORTFOLIO </center></h1><hr width="1200"></span>    
+        <div class="box1">
+        
+            <header>
                 <nav>
                     <ul>
-                        <a href="#">HOME &nbsp;</a>
-                        <a href="#">ABOUT &nbsp;</a>
-                        <a href="#">PROJECTS &nbsp;</a>
-                        <a href="#contactDetails">CONTACTS</a>
-                    </ul>
-                </nav>
-                        <img src="GARY.JPG" alt="this is an image of my self" width="500;" height="570;">
-                </header>
-                </td>
-                <td align="left">
-                <main>
-                <h2>ABOUT ME</h2>
+                       <li><a href="#">HOME &nbsp;</a></li> 
+                       <li> <a href="#box7">PROJECTS &nbsp;</a></li> 
+                       <li> <a href="#contactDetails">CONTACTS</a></li> 
+                   
+                    </ul>                           
+                </nav>   
+            </header>        
+        </div>   
+            <main>
+        <div class="box2">
+        <div class="box3">   
+                    <img src="GARY.JPG" alt="this is an image of my self" width="400;" height="500;" style="border-radius: 8%;">  
+        </div> 
+        <div class="box4">
+        <div class="box5">
+        
+            <h2>ABOUT ME </h2>
+            <p><em><strong>My name is <mark> GARY OLIVIER </mark> &nbsp; Iam a rising senior at Mzuzu University in Malawi studying
+                 Information and Communication Technolody, with interests  in website development,
+                  networking, sports and music.</strong> </em></p>
+        </div>   
+        <div class="box6" >  
+            <h2 style="text-align: center;">SKILLS</h2>
+            <br>
                     <ul>
-                        <li><p><em><strong>My name is <mark> GARY OLIVIER </mark> &nbsp; Iam a rising senior at Mzuzu University in Malawi studying <br>
-                             Information and Communication Technolody, with interests <br> in website development,
-                              networking, sports and music.</strong> </em></p></li>
-                        
-                        <p> I have been trained in other skills such as pc maintainace, C programming, 
-                            <br> and networking.  </p>                      
+                       <li>WEB DEVELOPMENT</li> 
+                       <li>SKILLED JAVA PROGRAMMER</li>
+                       <li>PC MAINTAINANCE</li>
                     </ul>
+        </div>                         
+        </div>         
+        </div> 
+        <div id="box7">
+           
+                    <ul>
+                        <h2>PROJECTS</h2>
+                        <li>Developed the mzuni website</li> 
+                        <li>Developed the the zoom applicatio</li>
+                    </ul>
+     
+        </div>             
+        
                 <br>
                 <h2></h2>
-                </main>
-                </td>              
-            </tr>
-        </table>
+            </main>
+       
+            
                  <br>
                  <br>
-                 <br>
-                 <h3>CONTACT DETAILS</h3>
-                <footer>
+               
+            <footer id="footer">
+            <h3>CONTACT DETAILS</h3>
                    <section id="contactDetails">
-                    <p>phone number:0880347030 </p>
-                     <p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   :0984577484</p>
+                    <p>phone number:0880347030 & 0984577484</p>                                       
                     <p>email: garyolivier623@gmail.com </p>
                    </section> 
-                </footer>
+            </footer>
+        </div>      
     </body>
     </html>
