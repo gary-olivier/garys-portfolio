@@ -1,0 +1,39 @@
+header {
+
+    padding: 15px;
+}
+
+.horizontal-list{
+    list-style-type: none;
+    padding: 0px;
+    margin: 1px;
+    display: flex;    
+}
+
+li{
+    border: 3px groove orange;
+    background-color: orange;
+    margin: 5px;
+    justify-content: space-evenly;
+
+}
+.topcontainer{
+    background-image:url(back.jpg);
+}
+
+.containerA{
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    padding: 6px;
+    margin: bottom 5px;
+    margin-top: 5px;
+    margin-left:0px ;
+    margin-right: 0px;
+    border: 5px dotted black;
+}
+input{
+    width: 95%;
+    height: 20px;
+    margin-bottom: 4px;
+}

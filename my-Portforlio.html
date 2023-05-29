@@ -16,9 +16,9 @@
             <header>
                 <nav>
                     <ul>
-                       <li><a href="#">HOME &nbsp;</a></li> 
-                       <li> <a href="#box7">PROJECTS &nbsp;</a></li> 
-                       <li> <a href="#contactDetails">CONTACTS</a></li> 
+                       <li><a href="skills.html">SKILLS &nbsp;</a></li> 
+                       <li> <a href="projects.html">PROJECTS &nbsp;</a></li> 
+                       <li> <a href="contacts.html">CONTACTS US</a></li> 
                    
                     </ul>                           
                 </nav>   
@@ -60,6 +60,52 @@
         
                 <br>
                 <h2></h2>
+        <div id="containSlideShow">
+        <div class="slideshow">
+            <div class="slideshow-container">
+                 <div class="slideshow-images">
+
+                 </div>
+            </div>
+        </div>
+        </div>
+
+                <script>
+                    var slideIndex = 0;
+            
+                    function showSlides() {
+                        var slides = document.getElementsByClassName("slideshow-images")[0].getElementsByTagName("img");
+            
+                        for (var i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+            
+                        slideIndex++;
+            
+                        if (slideIndex > slides.length) {
+                            slideIndex = 1;
+                        }
+            
+                        slides[slideIndex - 1].style.display = "block";
+            
+                        setTimeout(showSlides, 2000);
+                    }
+            
+                    function changeSlide(n) {
+                        slideIndex += n;
+                        showSlides();
+                    }
+            
+                    var images = ["R.png", "w3s.jpg"];
+            
+                    for (var i = 0; i < images.length; i++) {
+                        var img = document.createElement("img");
+                        img.src = images[i];
+                        document.getElementsByClassName("slideshow-images")[0].appendChild(img);
+                    }
+                    showSlides();
+                </script>
+        
             </main>
        
             
